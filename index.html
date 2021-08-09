@@ -8,17 +8,13 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:200,300,400,600,700,800" rel="stylesheet" />
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    {#    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cyborg/bootstrap.min.css" integrity="sha384-nEnU7Ae+3lD52AK+RGNzgieBWMnEfgTbRHIwEvp1XXPdqdO6uLTd/NwXbzboqjc2" crossorigin="anonymous">#}
-    {#    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/materia/bootstrap.min.css" integrity="sha384-B4morbeopVCSpzeC1c4nyV0d0cqvlSAfyXVfrPJa25im5p+yEN/YmhlgQP/OyMZD" crossorigin="anonymous">#}
     <link rel="stylesheet" href="css/custom.min.css">
     <link rel="stylesheet" href="css/bootstrap_materia.min.css">
 
-    {#        tags#}
     <title>Cheervideotienda: Tienda de Electrónica & Servicio Técnico</title>
     <meta name="description" content="Tienda de Electrónica & Servicio Técnico al Sur de Quito-Ecuador. Contamos con lo mejor en: Audio, video, cables, accesorios, tv, teléfonos y mucho más.">
-    <link rel="icon" type="image/png" href="{% static 'img/cheer_favicon.png' %}">
+    <link rel="icon" type="image/png" href="img/cheer_favicon.png">
 
-    {#    maps#}
     <script>
         // Initialize and add the map
         function initMap() {
@@ -49,41 +45,38 @@
 </head>
 
 <body style="color: #0f0f0f;
-    background: url('/static/img/hd_back_big.jpg') no-repeat fixed top;
-    background-size: auto;">
+    background: url('img/hd_back.png') no-repeat center top;
+    background-size: cover;">
 <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
     <div class="container">
-        <a class="navbar-brand" href="#"><img style="width: 188px;" src="{% static 'img/cheer_logo_mini.png' %}"
+        <a class="navbar-brand" href="#"><img style="width: 200px;" src="img/cheer_logo_mini.png"
                                               alt="Image text"></a>
-        {#contact button#}
         <button class="navbar-toggler btn btn-outline-primary text-white"
                 type="button" data-toggle="collapse" data-target="#navigation"
                 aria-expanded="false" aria-label="Toggle navigation">Contacto</button>
 
-        {#        navigation#}
         <div class="collapse navbar-collapse" id="navigation">
             <ul class="navbar-nav ml-auto">
                 <li class="search-bar input-group">
 
                     <a class="btn btn-link" href="tel:022640707" role="button">
-                        <i class="fa fa-phone-square" aria-hidden="true"></i>
-                        022-640-707
+                        <h4><i class="fa fa-phone-square" aria-hidden="true"></i>022-640-707</h4>
                     </a>
 
                     <a class="btn btn-link" href="tel:022668401" role="button">
-                        <i class="fa fa-phone-square" aria-hidden="true"></i>
-                        022-668-401
+                        <h4><i class="fa fa-phone-square" aria-hidden="true"></i>
+                            022-668-401</h4>
                     </a>
 
                     <a class="btn btn-link" href="tel:0967343438" role="button">
-                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
-                        096-734-3438
+                        <h4><i class="fa fa-whatsapp" aria-hidden="true"></i>
+                            096-734-3438</h4>
                     </a>
 
 
                     <a class="btn btn-link" href="mailto:info@cheervt.com" role="button">
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                        info@cheervt.com
+                        <h4><i class="fa fa-envelope" aria-hidden="true"></i>
+                            info@cheervt.com</h4>
                     </a>
                 </li>
 
@@ -93,81 +86,68 @@
     </div>
 </nav>
 
-{#content#}
 <div class="container-fluid">
 
-    {#    main banner#}
     <div class="row my-4"></div>
     <div class="row custom-p-top">
         <div class="col-md-12 my-4 text-center">
-            <h2 class="font-weight-normal">Lo mejor en</h2>
-            <h1 class="display-3 font-weight-normal">Electrónica <br> Audio & Video</h1>
-            <p class="lead font-weight-normal">El mejor servicio, al mejor precio y de calidad insuperable.</p>
-            <a class="btn btn-success" href="https://api.whatsapp.com/send?phone=+593967343438&text=¡Hola!"> <i class="fa fa-whatsapp" aria-hidden="true"></i> Servicio en línea</a>
+            <h1 class="font-weight-bold">Lo mejor en</h1>
+            <h1 class="display-2 font-weight-bold">ELECTRÓNICA <br> AUDIO & VIDEO</h1>
+            <h1 class="font-weight-normal">El mejor servicio, al mejor precio y de calidad insuperable.</h1>
+            <a class="btn btn-success m-4" href="https://api.whatsapp.com/send?phone=+593967343438&text=¡Hola!"><h5><i class="fa fa-whatsapp" aria-hidden="true"></i> Servicio en línea</h5></a>
         </div>
     </div>
     <div class="row p-4 mx-auto justify-content-center">
         <div class="col-lg-1  col-3 my-1">
-            <img data-toggle="tooltip" title="repuestos electrónicos" src="{% static 'img/icon_dark_p_1.png' %}" width="95" class="img-fluid rounded" alt="repuesto electrónicos al sur de quito">
+            <img data-toggle="tooltip" title="repuestos electrónicos" src="img/icon_dark_p_1.png" width="95" class="img-fluid rounded" alt="repuesto electrónicos al sur de quito">
         </div>
         <div class="col-lg-1  col-3 my-1">
-            <img data-toggle="tooltip" title="accesorios gaming" src="{% static 'img/icon_dark_p_2.png' %}" width="95" class="img-fluid rounded" alt="accesorios para gaming al sur de quito">
+            <img data-toggle="tooltip" title="accesorios gaming" src="img/icon_dark_p_2.png" width="95" class="img-fluid rounded" alt="accesorios para gaming al sur de quito">
         </div>
         <div class="col-lg-1  col-3 my-1">
-            <img data-toggle="tooltip" title="accesorios de licuadora" src="{% static 'img/icon_dark_p_3.png' %}" width="95" class="img-fluid rounded" alt="accesorios de licuador al sur de quito">
+            <img data-toggle="tooltip" title="accesorios de licuadora" src="img/icon_dark_p_3.png" width="95" class="img-fluid rounded" alt="accesorios de licuador al sur de quito">
         </div>
         <div class="col-lg-1  col-3 my-1">
-            <img data-toggle="tooltip" title="iluminacion led y normal" src="{% static 'img/icon_dark_p_4.png' %}" width="95" class="img-fluid rounded" alt="iluminacion led al sur de quito">
+            <img data-toggle="tooltip" title="iluminacion led y normal" src="img/icon_dark_p_4.png" width="95" class="img-fluid rounded" alt="iluminacion led al sur de quito">
         </div>
         <div class="col-lg-1  col-3 my-1">
-            <img data-toggle="tooltip" title="audio y video profesional" src="{% static 'img/icon_dark_p_5.png' %}" width="95" class="img-fluid rounded" alt="audio y video profesional al sur de quito">
+            <img data-toggle="tooltip" title="audio y video profesional" src="img/icon_dark_p_5.png" width="95" class="img-fluid rounded" alt="audio y video profesional al sur de quito">
         </div>
         <div class="col-lg-1  col-3 my-1">
-            <img data-toggle="tooltip" title="accesorios para TVs" src="{% static 'img/icon_dark_p_6.png' %}" width="95" class="img-fluid rounded" alt="accesorios para TV y radio al sur de quito">
+            <img data-toggle="tooltip" title="accesorios para TVs" src="img/icon_dark_p_6.png" width="95" class="img-fluid rounded" alt="accesorios para TV y radio al sur de quito">
         </div>
         <div class="col-lg-1  col-3 my-1">
-            <img data-toggle="tooltip" title="accesorios y reparación computadoras" src="{% static 'img/icon_dark_p_7.png' %}" width="95" class="img-fluid rounded" alt="servicio técnico al sur de quito">
+            <img data-toggle="tooltip" title="accesorios y reparación computadoras" src="img/icon_dark_p_7.png" width="95" class="img-fluid rounded" alt="servicio técnico al sur de quito">
         </div>
-        {#        <div class="col-lg-1  my-1">#}
-        {#            <img src="{% static 'img/icon_p_8.png' %}" width="95" class="img-fluid rounded" alt="">#}
-        {#        </div>#}
+
         <div class="col-lg-1  col-3 my-1">
-            <img data-toggle="tooltip" title="baterías y pilas" src="{% static 'img/icon_dark_p_9.png' %}" width="95" class="img-fluid rounded" alt="baterías y pilas al sur de quito">
+            <img data-toggle="tooltip" title="baterías y pilas" src="img/icon_dark_p_9.png" width="95" class="img-fluid rounded" alt="baterías y pilas al sur de quito">
         </div>
-        {#        <div class="col-lg-1 ">#}
-        {#            <img src="{% static 'img/icon_p_10.png' %}" width="95" class="img-fluid rounded" alt="">#}
-        {#        </div>#}
-        {#        <div class="col-lg-1 ">#}
-        {#            <img src="{% static 'img/icon_p_11.png' %}" width="95" class="img-fluid rounded" alt="">#}
-        {#        </div>#}
-        {#        <div class="col-lg-1 ">#}
-        {#            <img src="{% static 'img/icon_p_12.png' %}" width="95" class="img-fluid rounded" alt="">#}
-        {#        </div>#}
     </div>
     <div class="row my-4"></div>
 
-    {#services#}
+
     <div class="row">
-        <div class="col-md-6 bg-dark">
+        <div class="col-md-6 bg-warning">
             <div class="row text-center text-light">
                 <div class="col-md-12 custom-p-top">
-                    <img src="{% static 'img/icon_basket_grad.png' %}" width="100" class="img-fluid rounded" alt="tienda de electrónica al sur de quito">
+                    <img src="img/icon_dark_p_1.png" width="100" class="img-fluid rounded" alt="tienda de electrónica al sur de quito">
                 </div>
             </div>
             <div class="row text-center text-light">
                 <div class="col-md-8 p-5 mx-auto my-1">
-                    <h3 class="font-weight-normal">Tienda de Electrónica</h3>
-                    <p class="lead font-weight-normal">Venta al por mayor y menor de mateirales electrónicos y eléctricos. Audio profesional, y proyectos estudiantiles.</p>
-                    <h5>
-                        <span class="badge badge-primary">Audio</span>
-                        <span class="badge badge-secondary">Telefonía</span>
-                        <span class="badge badge-success">Repuestos Oster</span>
-                        <span class="badge badge-danger">Cables y repuestos</span>
-                        <span class="badge badge-warning">Computación</span>
-                        <span class="badge badge-info">Baterías</span>
-                        <span class="badge badge-light">Arduino</span>
-                        <span class="badge badge-dark">Internet y routers</span>
-                    </h5>
+                    <h1 class="display-4 font-weight-bold">Tienda de Electrónica</h1>
+                    <h4 class="font-weight-normal">Venta al por mayor y menor de mateirales electrónicos y eléctricos. Audio profesional, y proyectos estudiantiles.</h4>
+                    <h4 class="font-weight-normal">
+                        <span class="badge badge-primary m-1">Audio</span>
+                        <span class="badge badge-secondary m-1">Telefonía</span>
+                        <span class="badge badge-success m-1">Repuestos Oster</span>
+                        <span class="badge badge-danger m-1">Cables y repuestos</span>
+                        <span class="badge badge-warning m-1">Computación</span>
+                        <span class="badge badge-info m-1">Baterías</span>
+                        <span class="badge badge-light m-1">Arduino</span>
+                        <span class="badge badge-dark m-1">Internet y routers</span>
+                    </h4>
                 </div>
             </div>
         </div>
@@ -175,31 +155,28 @@
         <div class="col-md-6 bg-dark">
             <div class="row text-center text-light">
                 <div class="col-md-12 custom-p-top">
-                    <img src="{% static 'img/icon_screw_grad.png' %}" width="100" class="img-fluid rounded" alt="Servicio técnico al sur de quito">
+                    <img src="img/icon_screw_grad.png" width="100" class="img-fluid rounded" alt="Servicio técnico al sur de quito">
                 </div>
             </div>
             <div class="row text-center text-light">
                 <div class="col-md-8 p-5 mx-auto my-1">
-                    <h3 class="font-weight-normal">Servicio Técnico</h3>
-                    <p class="lead font-weight-normal">Ofrecemos servicio técnico especializado en televisores, radios, licuadoras, teléfonos, computadores y mucho más!</p>
-                    <a class="btn btn-info" href="https://api.whatsapp.com/send?phone=+593967343438&text=Hola, necesito soporte técnico con:">Solicitar soporte</a>
+                    <h3 class="display-4 font-weight-bold">Servicio Técnico</h3>
+                    <h4 class="font-weight-normal">Ofrecemos servicio técnico especializado en televisores, radios, licuadoras, teléfonos, computadores y mucho más!</h4>
+                    <a class="btn btn-info m-3" href="https://api.whatsapp.com/send?phone=+593967343438&text=Hola, necesito soporte técnico con:">Solicitar soporte</a>
                 </div>
             </div>
         </div>
     </div>
-    {#contact#}
-    <div class="row bg-warning text-center text-light justify-content-center">
+    <div class="row bg-info text-center text-light justify-content-center">
         <div class="col-10 custom-p-top">
-            <h2>Ubicación</h2>
+            <h3 class="display-4 font-weight-bold">Ubicación</h3>
             <p class="lead font-weight-normal text-white">Av. Teniente Hugo Ortiz, Quito 170601, Ecuador</p>
-            <a class="btn btn-secondary" href="https://g.page/cheervt?share">Ver en Google Maps</a>
+            <a class="btn btn-secondary m-3" href="https://g.page/cheervt?share">Ver en Google Maps</a>
         </div>
         <div class="col-11 p-2">
-            {#            <img src="{% static 'img/map_cheervt.png' %}" class="img-fluid rounded p-md-5 my-3 " alt="Ubicación cheervideotienda: Av. Teniente Hugo Ortiz, Quito 170601, Ecuador">#}
             <div id="map"></div>
         </div>
     </div>
-    {#footer#}
     <fooster class="text-muted">
 
         <div class="row bg-dark">
