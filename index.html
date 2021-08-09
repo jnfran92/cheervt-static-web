@@ -1,10 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:200,300,400,600,700,800" rel="stylesheet" />
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    {#    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cyborg/bootstrap.min.css" integrity="sha384-nEnU7Ae+3lD52AK+RGNzgieBWMnEfgTbRHIwEvp1XXPdqdO6uLTd/NwXbzboqjc2" crossorigin="anonymous">#}
+    {#    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/materia/bootstrap.min.css" integrity="sha384-B4morbeopVCSpzeC1c4nyV0d0cqvlSAfyXVfrPJa25im5p+yEN/YmhlgQP/OyMZD" crossorigin="anonymous">#}
+    <link rel="stylesheet" href="{% static 'css/custom.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap_materia.min.css' %}">
 
+    {#        tags#}
+    <title>Cheervideotienda: Tienda de Electrónica & Servicio Técnico</title>
+    <meta name="description" content="Tienda de Electrónica & Servicio Técnico al Sur de Quito-Ecuador. Contamos con lo mejor en: Audio, video, cables, accesorios, tv, teléfonos y mucho más.">
+    <link rel="icon" type="image/png" href="{% static 'img/cheer_favicon.png' %}">
+
+    {#    maps#}
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location of Uluru
+            const uluru = { lat: -0.251847, lng: -78.531098 };
+            // The map, centered at Uluru
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 16,
+                center: uluru,
+            });
+            // The marker, positioned at Uluru
+            const marker = new google.maps.Marker({
+                position: uluru,
+                map: map,
+            });
+        }
+    </script>
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDn0jWeBkV1OaBjnbSvOTgAH8PchGOJuB8&callback=initMap"></script>
+    <style>
+        #map {
+            height: 650px;
+            /* The height is 400 pixels */
+            width: 100%;
+            /* The width is the width of the web page */
+        }
+    </style>
+
+</head>
+
+<body style="color: #0f0f0f;
+    background: url('/static/img/hd_back_big.jpg') no-repeat fixed top;
+    background-size: auto;">
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#"><img style="width: 188px;" src="{% static 'img/cheer_logo_mini.png' %}"
+                                              alt="Image text"></a>
+        {#contact button#}
+        <button class="navbar-toggler btn btn-outline-primary text-white"
+                type="button" data-toggle="collapse" data-target="#navigation"
+                aria-expanded="false" aria-label="Toggle navigation">Contacto</button>
+
+        {#        navigation#}
+        <div class="collapse navbar-collapse" id="navigation">
+            <ul class="navbar-nav ml-auto">
+                <li class="search-bar input-group">
+
+                    <a class="btn btn-link" href="tel:022640707" role="button">
+                        <i class="fa fa-phone-square" aria-hidden="true"></i>
+                        022-640-707
+                    </a>
+
+                    <a class="btn btn-link" href="tel:022668401" role="button">
+                        <i class="fa fa-phone-square" aria-hidden="true"></i>
+                        022-668-401
+                    </a>
+
+                    <a class="btn btn-link" href="tel:0967343438" role="button">
+                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                        096-734-3438
+                    </a>
+
+
+                    <a class="btn btn-link" href="mailto:info@cheervt.com" role="button">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        info@cheervt.com
+                    </a>
+                </li>
+
+                <li class="separator d-lg-none"></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+{#content#}
+<div class="container-fluid">
+
+    {#    main banner#}
+    <div class="row my-4"></div>
+    <div class="row custom-p-top">
+        <div class="col-md-12 my-4 text-center">
+            <h2 class="font-weight-normal">Lo mejor en</h2>
+            <h1 class="display-3 font-weight-normal">Electrónica <br> Audio & Video</h1>
+            <p class="lead font-weight-normal">El mejor servicio, al mejor precio y de calidad insuperable.</p>
+            <a class="btn btn-success" href="https://api.whatsapp.com/send?phone=+593967343438&text=¡Hola!"> <i class="fa fa-whatsapp" aria-hidden="true"></i> Servicio en línea</a>
+        </div>
+    </div>
+    <div class="row p-4 mx-auto justify-content-center">
+        <div class="col-lg-1  col-3 my-1">
+            <img data-toggle="tooltip" title="repuestos electrónicos" src="{% static 'img/icon_dark_p_1.png' %}" width="95" class="img-fluid rounded" alt="repuesto electrónicos al sur de quito">
+        </div>
+        <div class="col-lg-1  col-3 my-1">
+            <img data-toggle="tooltip" title="accesorios gaming" src="{% static 'img/icon_dark_p_2.png' %}" width="95" class="img-fluid rounded" alt="accesorios para gaming al sur de quito">
+        </div>
+        <div class="col-lg-1  col-3 my-1">
+            <img data-toggle="tooltip" title="accesorios de licuadora" src="{% static 'img/icon_dark_p_3.png' %}" width="95" class="img-fluid rounded" alt="accesorios de licuador al sur de quito">
+        </div>
+        <div class="col-lg-1  col-3 my-1">
+            <img data-toggle="tooltip" title="iluminacion led y normal" src="{% static 'img/icon_dark_p_4.png' %}" width="95" class="img-fluid rounded" alt="iluminacion led al sur de quito">
+        </div>
+        <div class="col-lg-1  col-3 my-1">
+            <img data-toggle="tooltip" title="audio y video profesional" src="{% static 'img/icon_dark_p_5.png' %}" width="95" class="img-fluid rounded" alt="audio y video profesional al sur de quito">
+        </div>
+        <div class="col-lg-1  col-3 my-1">
+            <img data-toggle="tooltip" title="accesorios para TVs" src="{% static 'img/icon_dark_p_6.png' %}" width="95" class="img-fluid rounded" alt="accesorios para TV y radio al sur de quito">
+        </div>
+        <div class="col-lg-1  col-3 my-1">
+            <img data-toggle="tooltip" title="accesorios y reparación computadoras" src="{% static 'img/icon_dark_p_7.png' %}" width="95" class="img-fluid rounded" alt="servicio técnico al sur de quito">
+        </div>
+        {#        <div class="col-lg-1  my-1">#}
+        {#            <img src="{% static 'img/icon_p_8.png' %}" width="95" class="img-fluid rounded" alt="">#}
+        {#        </div>#}
+        <div class="col-lg-1  col-3 my-1">
+            <img data-toggle="tooltip" title="baterías y pilas" src="{% static 'img/icon_dark_p_9.png' %}" width="95" class="img-fluid rounded" alt="baterías y pilas al sur de quito">
+        </div>
+        {#        <div class="col-lg-1 ">#}
+        {#            <img src="{% static 'img/icon_p_10.png' %}" width="95" class="img-fluid rounded" alt="">#}
+        {#        </div>#}
+        {#        <div class="col-lg-1 ">#}
+        {#            <img src="{% static 'img/icon_p_11.png' %}" width="95" class="img-fluid rounded" alt="">#}
+        {#        </div>#}
+        {#        <div class="col-lg-1 ">#}
+        {#            <img src="{% static 'img/icon_p_12.png' %}" width="95" class="img-fluid rounded" alt="">#}
+        {#        </div>#}
+    </div>
+    <div class="row my-4"></div>
+
+    {#services#}
+    <div class="row">
+        <div class="col-md-6 bg-dark">
+            <div class="row text-center text-light">
+                <div class="col-md-12 custom-p-top">
+                    <img src="{% static 'img/icon_basket_grad.png' %}" width="100" class="img-fluid rounded" alt="tienda de electrónica al sur de quito">
+                </div>
+            </div>
+            <div class="row text-center text-light">
+                <div class="col-md-8 p-5 mx-auto my-1">
+                    <h3 class="font-weight-normal">Tienda de Electrónica</h3>
+                    <p class="lead font-weight-normal">Venta al por mayor y menor de mateirales electrónicos y eléctricos. Audio profesional, y proyectos estudiantiles.</p>
+                    <h5>
+                        <span class="badge badge-primary">Audio</span>
+                        <span class="badge badge-secondary">Telefonía</span>
+                        <span class="badge badge-success">Repuestos Oster</span>
+                        <span class="badge badge-danger">Cables y repuestos</span>
+                        <span class="badge badge-warning">Computación</span>
+                        <span class="badge badge-info">Baterías</span>
+                        <span class="badge badge-light">Arduino</span>
+                        <span class="badge badge-dark">Internet y routers</span>
+                    </h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 bg-dark">
+            <div class="row text-center text-light">
+                <div class="col-md-12 custom-p-top">
+                    <img src="{% static 'img/icon_screw_grad.png' %}" width="100" class="img-fluid rounded" alt="Servicio técnico al sur de quito">
+                </div>
+            </div>
+            <div class="row text-center text-light">
+                <div class="col-md-8 p-5 mx-auto my-1">
+                    <h3 class="font-weight-normal">Servicio Técnico</h3>
+                    <p class="lead font-weight-normal">Ofrecemos servicio técnico especializado en televisores, radios, licuadoras, teléfonos, computadores y mucho más!</p>
+                    <a class="btn btn-info" href="https://api.whatsapp.com/send?phone=+593967343438&text=Hola, necesito soporte técnico con:">Solicitar soporte</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {#contact#}
+    <div class="row bg-warning text-center text-light justify-content-center">
+        <div class="col-10 custom-p-top">
+            <h2>Ubicación</h2>
+            <p class="lead font-weight-normal text-white">Av. Teniente Hugo Ortiz, Quito 170601, Ecuador</p>
+            <a class="btn btn-secondary" href="https://g.page/cheervt?share">Ver en Google Maps</a>
+        </div>
+        <div class="col-11 p-2">
+            {#            <img src="{% static 'img/map_cheervt.png' %}" class="img-fluid rounded p-md-5 my-3 " alt="Ubicación cheervideotienda: Av. Teniente Hugo Ortiz, Quito 170601, Ecuador">#}
+            <div id="map"></div>
+        </div>
+    </div>
+    {#footer#}
+    <fooster class="text-muted">
+
+        <div class="row bg-dark">
+            <div class="col-12 p-3">
+                <p class="lead text-primary">Cheervideotienda: Tienda de electrónica y Servicio Técnico</p>
+                <p>Av. Teniente Hugo Ortiz, Quito 170601, Ecuador </p>
+                <p>Contacto: 022-640-707/022-668-401/096-734-3438/ info@cheervt.com</p>
+            </div>
+        </div>
+        <div class="row text-center bg-dark justify-content-center">
+            <div class="col-12 p-3">
+                <small>Designed with <i class="fa fa-heart" aria-hidden="true"></i>  by jnfran92</small>
+            </div>
+        </div>
+    </fooster>
+</div>
+<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
 </body>
 </html>
